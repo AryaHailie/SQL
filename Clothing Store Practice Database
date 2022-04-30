@@ -1,0 +1,18 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, totalcost INTEGER);
+INSERT INTO store VALUES (1, "Shirt, White SMALL", 20, 20, 400);
+INSERT INTO store VALUES (2, "Pants, Blue", 20, 20, 400);
+INSERT INTO store VALUES (3, "Shirt, Black SMALL", 20, 20, 400);
+INSERT INTO store VALUES (4, "Pants, Black", 15, 15, 225);
+INSERT INTO store VALUES (5, "Long Sleeve, White", 10, 10, 100);
+INSERT INTO store VALUES (6, "Long Sleeve, Black", 10, 10, 100);
+INSERT INTO store VALUES (7, "Long Sleeve, Blue", 10, 10, 100);
+INSERT INTO store VALUES (8, "Jeans, Blue, Ripped", 15, 30, 450);
+INSERT INTO store VALUES (9, "Jeans, Blue, Faded", 15, 30, 450);
+INSERT INTO store VALUES (10, "Shoes, Black SIZE 8 ", 20, 50, 1000);
+INSERT INTO store VALUES (11, "Shoes, White SIZE 8", 20, 50, 1000);
+INSERT INTO store VALUES (12, "Shoes, White SIZE 9", 20, 50, 1000);
+INSERT INTO store VALUES (13, "Shoes, Black, SIZE 9", 20, 50, 1000);
+INSERT INTO store VALUES (14, "Shirt, White LARGE", 20, 20, 400);
+INSERT INTO store VALUES (15, "Shirt, Black LARGE", 20, 20, 400);
+SELECT * FROM store ORDER BY price;
+SELECT SUM(totalcost) FROM store
